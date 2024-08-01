@@ -1,0 +1,45 @@
+[0.345s] Invoking command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware -- -j4 -l4
+[1.066s] [ 33%] Built target gmock
+[1.068s] [ 55%] Built target gmock_main
+[1.119s] [ 77%] Built target moving_box_hardware
+[1.192s] [100%] Built target test_moving_box_hardware_interface
+[1.232s] Invoked command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware -- -j4 -l4
+[1.473s] Invoking command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware
+[1.507s] -- Install configuration: ""
+[1.507s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/moving_box_hardware.xml
+[1.509s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/libmoving_box_hardware.so
+[1.511s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include
+[1.513s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware
+[1.515s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware/visibility_control.h
+[1.515s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware/moving_box_hardware_interface.hpp
+[1.516s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/ros2_control
+[1.517s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/ros2_control/moving_box.ros2_control.xacro
+[1.518s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf
+[1.519s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf/moving_box.urdf.xacro
+[1.519s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf/moving_box_description.urdf
+[1.520s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/launch
+[1.521s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/launch/moving_box.launch.py
+[1.522s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/config
+[1.522s] -- Installing: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/config/moving_box_controllers.yaml
+[1.523s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/library_path.sh
+[1.524s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/library_path.dsv
+[1.525s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/package_run_dependencies/moving_box_hardware
+[1.526s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/parent_prefix_path/moving_box_hardware
+[1.526s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/ament_prefix_path.sh
+[1.527s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/ament_prefix_path.dsv
+[1.527s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/path.sh
+[1.528s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/path.dsv
+[1.529s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.bash
+[1.529s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.sh
+[1.530s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.zsh
+[1.530s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.dsv
+[1.531s] -- Installing: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.dsv
+[1.533s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/packages/moving_box_hardware
+[1.534s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/moving_box_hardware
+[1.534s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.535s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+[1.535s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.536s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/moving_box_hardwareConfig.cmake
+[1.536s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/moving_box_hardwareConfig-version.cmake
+[1.537s] -- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.xml
+[1.551s] Invoked command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware

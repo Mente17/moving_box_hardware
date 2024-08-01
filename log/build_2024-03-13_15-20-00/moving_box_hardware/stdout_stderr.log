@@ -1,0 +1,41 @@
+[ 22%] Built target gmock_main
+[ 55%] Built target gmock
+[ 77%] Built target moving_box_hardware
+[100%] Built target test_moving_box_hardware_interface
+-- Install configuration: ""
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/moving_box_hardware.xml
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/libmoving_box_hardware.so
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware/visibility_control.h
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware/moving_box_hardware_interface.hpp
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/ros2_control
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/ros2_control/moving_box.ros2_control.xacro
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf/moving_box.urdf.xacro
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf/moving_box_description.urdf
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/launch
+-- Installing: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/launch/moving_box.launch.py
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/config
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/config/moving_box_controllers.yaml
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/library_path.sh
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/library_path.dsv
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/package_run_dependencies/moving_box_hardware
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/parent_prefix_path/moving_box_hardware
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/path.sh
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/path.dsv
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.bash
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.sh
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.zsh
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.dsv
+-- Installing: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.dsv
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/packages/moving_box_hardware
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/moving_box_hardware
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/moving_box_hardwareConfig.cmake
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/moving_box_hardwareConfig-version.cmake
+-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.xml

@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <xacro:property name="sensor_length" value="0.02"/>
+    <xacro:property name="sensor_width" value="0.04"/>
+    <xacro:property name="sensor_height" value="0.02"/>
+    <xacro:property name="sensor_mass" value="0.1"/>
+    <xacro:property name="name" value="sensor"/>
+
+    <!-- FRONT LEFT JOINT-->
+
+    <joint name="range_fl_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="base_range_fl"/>
+        <origin xyz="0.7350 0.04 -0.01" rpy="0 0 ${10*(pi/180)}"/>
+    </joint>
+
+    <link name="base_range_fl">
+        <visual>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="${sensor_mass}" x="${sensor_length}" y="${sensor_width}" z="${sensor_height}">
+            <origin xyz="${sensor_length/2} 0 ${sensor_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <!-- FRONT RIGHT JOINT-->
+
+    <joint name="range_fr_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="base_range_fr"/>
+        <origin xyz="0.7350 -0.04 -0.01" rpy="0 0 -${10*(pi/180)}"/>
+    </joint>
+
+    <link name="base_range_fr">
+        <visual>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="${sensor_mass}" x="${sensor_length}" y="${sensor_width}" z="${sensor_height}">
+            <origin xyz="${sensor_length/2} 0 ${sensor_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <!-- BACK LEFT JOINT-->
+
+    <joint name="range_rl_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="base_range_rl"/>
+        <origin xyz="0.03 0.14 -0.01" rpy="0 0 ${170*(pi/180)}"/>
+    </joint>
+
+    <link name="base_range_rl">
+        <visual>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="${sensor_mass}" x="${sensor_length}" y="${sensor_width}" z="${sensor_height}">
+            <origin xyz="${sensor_length/2} 0 ${sensor_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <!-- BACK RIGHT JOINT-->
+
+    <joint name="range_rr_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="base_range_rr"/>
+        <origin xyz="0.03 -0.14 -0.01" rpy="0 0 -${170*(pi/180)}"/>
+    </joint>
+
+    <link name="base_range_rr">
+        <visual>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${sensor_length} ${sensor_width} ${sensor_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="${sensor_mass}" x="${sensor_length}" y="${sensor_width}" z="${sensor_height}">
+            <origin xyz="${sensor_length/2} 0 ${sensor_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+<!-- REAR RIGHT GAZEBO-->
+
+    <gazebo reference="base_range_rr">
+        <material>Gazebo/Blue</material>
+
+        <sensor name="ultrasound_rr" type="ray">
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </ray>
+            <plugin name="bytes_ultrasound_rr" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <remapping>~/out:=range_rr</remapping>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>base_range_rr</frame_name>
+            </plugin>
+        </sensor>
+</gazebo>
+
+
+<!-- REAR LEFT GAZEBO-->
+
+<gazebo reference="base_range_rl">
+        <material>Gazebo/Blue</material>
+
+        <sensor name="ultrasound_rl" type="ray">
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </ray>
+            <plugin name="bytes_ultrasound_rl" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <remapping>~/out:=range_rl</remapping>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>base_range_rl</frame_name>
+            </plugin>
+        </sensor>
+</gazebo>
+
+<!-- FRONT RIGHT GAZEBO-->
+
+<gazebo reference="base_range_fr">
+        <material>Gazebo/Blue</material>
+
+        <sensor name="ultrasound_fr" type="ray">
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </ray>
+            <plugin name="bytes_ultrasound_fr" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <argument>~/out:=range_fr</argument>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>base_range_fr</frame_name>
+            </plugin>
+        </sensor>
+</gazebo>
+
+<!-- FRONT LEFT GAZEBO-->
+
+<gazebo reference="base_range_fl">
+        <material>Gazebo/Blue</material>
+
+        <sensor name="ultrasound_fl" type="ray">
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </ray>
+            <plugin name="bytes_ultrasound_fl" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <argument>~/out:=range_fl</argument>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>base_range_fl</frame_name>
+            </plugin>
+        </sensor>
+</gazebo>
+
+</robot>

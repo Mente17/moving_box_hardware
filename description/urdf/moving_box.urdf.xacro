@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="moving_box">
+  <xacro:arg name="prefix" default="" />
+  <xacro:arg name="sim_mode" default="false"/>
+
+  <xacro:include filename="$(find moving_box_hardware)/urdf/moving_box_description.urdf" />
+
+  <!-- Import diffbot ros2_control description -->
+  <xacro:include filename="$(find moving_box_hardware)/ros2_control/moving_box.ros2_control.xacro" />
+
+  <!-- <xacro:include filename="gazebo_control.xacro"/> -->
+  <xacro:include filename="lidar.xacro" />
+  <!-- <xacro:include filename="sensors.xacro" /> -->
+  <!-- <xacro:include filename="depth_camera.xacro" /> -->
+
+  <xacro:moving_box_ros2_control
+    name="MovingBox" prefix="$(arg prefix)"/>
+
+</robot>

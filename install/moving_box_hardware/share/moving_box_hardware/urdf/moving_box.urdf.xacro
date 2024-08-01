@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="moving_box">
+  <xacro:arg name="prefix" default="" />
+
+  <xacro:include filename="$(find moving_box_hardware)/urdf/moving_box_description.urdf" />
+
+  <!-- Import diffbot ros2_control description -->
+  <xacro:include filename="$(find moving_box_hardware)/ros2_control/moving_box.ros2_control.xacro" />
+
+  <xacro:moving_box_ros2_control
+    name="MovingBox" prefix="$(arg prefix)"/>
+
+</robot>

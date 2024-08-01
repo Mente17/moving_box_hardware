@@ -1,0 +1,116 @@
+[4.481s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.481s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff85760580>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff85a306a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff85a306a0>>)
+[4.755s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.756s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mbros/moving_box/moving_box_hardware'
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.850s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'moving_box_hardware'
+[4.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.851s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.851s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.851s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.851s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/mbros/microros_ws/install
+[5.442s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 237 installed packages in /opt/ros/humble
+[5.447s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.785s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'cmake_args' from command line to 'None'
+[5.785s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'cmake_target' from command line to 'None'
+[5.785s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.785s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[5.786s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[5.786s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[5.786s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[5.786s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[5.786s] Level 5:colcon.colcon_core.verb:set package 'moving_box_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.786s] DEBUG:colcon.colcon_core.verb:Building package 'moving_box_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware', 'merge_install': False, 'path': '/home/mbros/moving_box/moving_box_hardware', 'symlink_install': False, 'test_result_base': None}
+[5.841s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.901s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mbros/moving_box/moving_box_hardware' with build type 'ament_cmake'
+[5.902s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mbros/moving_box/moving_box_hardware'
+[5.977s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.979s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.979s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mbros/moving_box/moving_box_hardware -DCMAKE_INSTALL_PREFIX=/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware
+[17.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mbros/moving_box/moving_box_hardware -DCMAKE_INSTALL_PREFIX=/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware
+[17.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware -- -j4 -l4
+[67.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware -- -j4 -l4
+[67.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware
+[67.597s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moving_box_hardware)
+[67.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware
+[67.682s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware' for CMake module files
+[67.686s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware' for CMake config files
+[67.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_box_hardware', 'cmake_prefix_path')
+[67.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/cmake_prefix_path.ps1'
+[67.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/cmake_prefix_path.dsv'
+[67.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/cmake_prefix_path.sh'
+[67.756s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib'
+[67.757s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_box_hardware', 'ld_library_path_lib')
+[67.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/ld_library_path_lib.ps1'
+[67.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/ld_library_path_lib.dsv'
+[67.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/ld_library_path_lib.sh'
+[67.819s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/bin'
+[67.820s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/pkgconfig/moving_box_hardware.pc'
+[67.820s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/python3.10/site-packages'
+[67.821s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/bin'
+[67.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.ps1'
+[67.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.dsv'
+[67.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.sh'
+[67.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.bash'
+[67.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.zsh'
+[67.899s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/colcon-core/packages/moving_box_hardware)
+[68.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moving_box_hardware)
+[68.198s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware' for CMake module files
+[68.202s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware' for CMake config files
+[68.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_box_hardware', 'cmake_prefix_path')
+[68.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/cmake_prefix_path.ps1'
+[68.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/cmake_prefix_path.dsv'
+[68.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/cmake_prefix_path.sh'
+[68.269s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib'
+[68.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_box_hardware', 'ld_library_path_lib')
+[68.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/ld_library_path_lib.ps1'
+[68.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/ld_library_path_lib.dsv'
+[68.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/hook/ld_library_path_lib.sh'
+[68.333s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/bin'
+[68.333s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/pkgconfig/moving_box_hardware.pc'
+[68.334s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/python3.10/site-packages'
+[68.335s] Level 1:colcon.colcon_core.environment:checking '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/bin'
+[68.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.ps1'
+[68.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.dsv'
+[68.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.sh'
+[68.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.bash'
+[68.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.zsh'
+[68.405s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/colcon-core/packages/moving_box_hardware)
+[68.406s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[68.407s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[68.407s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[68.407s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[68.488s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[68.489s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[68.489s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[68.489s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[68.543s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[68.543s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[68.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbros/moving_box/moving_box_hardware/install/local_setup.ps1'
+[68.609s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mbros/moving_box/moving_box_hardware/install/_local_setup_util_ps1.py'
+[68.615s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbros/moving_box/moving_box_hardware/install/setup.ps1'
+[68.677s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbros/moving_box/moving_box_hardware/install/local_setup.sh'
+[68.680s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mbros/moving_box/moving_box_hardware/install/_local_setup_util_sh.py'
+[68.681s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbros/moving_box/moving_box_hardware/install/setup.sh'
+[68.742s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbros/moving_box/moving_box_hardware/install/local_setup.bash'
+[68.745s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbros/moving_box/moving_box_hardware/install/setup.bash'
+[68.806s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbros/moving_box/moving_box_hardware/install/local_setup.zsh'
+[68.809s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbros/moving_box/moving_box_hardware/install/setup.zsh'

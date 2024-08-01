@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/mrtdebugger/ros2_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/nmea_navsat_driver/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/my_ledpy_controller/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/moving_box_nodes/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/mrtdebugger/ros2_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/nmea_navsat_driver/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/my_ledpy_controller/lib/python3.10/site-packages",
+        "/home/mrtdebugger/ros2_ws/install/moving_box_nodes/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ]
+}

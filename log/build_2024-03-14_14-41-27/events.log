@@ -1,0 +1,466 @@
+[0.000000] (-) TimerEvent: {}
+[0.001768] (moving_box_hardware) JobQueued: {'identifier': 'moving_box_hardware', 'dependencies': OrderedDict()}
+[0.001911] (moving_box_hardware) JobStarted: {'identifier': 'moving_box_hardware'}
+[0.099114] (-) TimerEvent: {}
+[0.199954] (-) TimerEvent: {}
+[0.301103] (-) TimerEvent: {}
+[0.320526] (moving_box_hardware) JobProgress: {'identifier': 'moving_box_hardware', 'progress': 'cmake'}
+[0.324988] (moving_box_hardware) JobProgress: {'identifier': 'moving_box_hardware', 'progress': 'build'}
+[0.328432] (moving_box_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware', '--', '-j4', '-l4'], 'cwd': '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mbros'), ('USER', 'mbros'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib:/home/mbros/microros_ws/install/micro_ros_agent/lib:/home/mbros/microros_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mbros'), ('OLDPWD', '/home/mbros'), ('HUSHLOGIN', 'FALSE'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '775'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/mbros/moving_box/moving_box_hardware/install:/home/mbros/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mbros'), ('JOURNAL_STREAM', '8:19173'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'linux'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('INVOCATION_ID', 'f2c085c8dc724708a3505408168a0869'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware:/home/mbros/microros_ws/install/micro_ros_setup:/home/mbros/microros_ws/install/micro_ros_agent:/home/mbros/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_VTNR', '1'), ('PWD', '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbros/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware:/home/mbros/microros_ws/install/micro_ros_setup:/home/mbros/microros_ws/install/micro_ros_agent:/home/mbros/microros_ws/install/micro_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[0.401319] (-) TimerEvent: {}
+[0.502215] (-) TimerEvent: {}
+[0.537446] (moving_box_hardware) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target moving_box_hardware\x1b[0m\n'}
+[0.586813] (moving_box_hardware) StdoutLine: {'line': b'[ 22%] Built target gmock_main\n'}
+[0.590071] (moving_box_hardware) StdoutLine: {'line': b'[ 55%] Built target gmock\n'}
+[0.602398] (-) TimerEvent: {}
+[0.635091] (moving_box_hardware) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/moving_box_hardware.dir/src/moving_box_hardware_interface.cpp.o\x1b[0m\n'}
+[0.701023] (moving_box_hardware) StdoutLine: {'line': b'[ 88%] Built target test_moving_box_hardware_interface\n'}
+[0.702589] (-) TimerEvent: {}
+[0.803520] (-) TimerEvent: {}
+[0.904275] (-) TimerEvent: {}
+[1.004999] (-) TimerEvent: {}
+[1.105727] (-) TimerEvent: {}
+[1.206483] (-) TimerEvent: {}
+[1.307195] (-) TimerEvent: {}
+[1.407952] (-) TimerEvent: {}
+[1.508662] (-) TimerEvent: {}
+[1.609394] (-) TimerEvent: {}
+[1.710201] (-) TimerEvent: {}
+[1.810906] (-) TimerEvent: {}
+[1.911626] (-) TimerEvent: {}
+[2.012345] (-) TimerEvent: {}
+[2.113083] (-) TimerEvent: {}
+[2.213849] (-) TimerEvent: {}
+[2.314568] (-) TimerEvent: {}
+[2.415302] (-) TimerEvent: {}
+[2.516087] (-) TimerEvent: {}
+[2.616869] (-) TimerEvent: {}
+[2.717676] (-) TimerEvent: {}
+[2.818489] (-) TimerEvent: {}
+[2.919335] (-) TimerEvent: {}
+[3.020147] (-) TimerEvent: {}
+[3.120905] (-) TimerEvent: {}
+[3.221734] (-) TimerEvent: {}
+[3.322561] (-) TimerEvent: {}
+[3.423371] (-) TimerEvent: {}
+[3.524175] (-) TimerEvent: {}
+[3.624948] (-) TimerEvent: {}
+[3.725720] (-) TimerEvent: {}
+[3.826691] (-) TimerEvent: {}
+[3.927465] (-) TimerEvent: {}
+[4.028277] (-) TimerEvent: {}
+[4.129124] (-) TimerEvent: {}
+[4.230001] (-) TimerEvent: {}
+[4.330885] (-) TimerEvent: {}
+[4.431746] (-) TimerEvent: {}
+[4.532584] (-) TimerEvent: {}
+[4.633325] (-) TimerEvent: {}
+[4.734133] (-) TimerEvent: {}
+[4.835016] (-) TimerEvent: {}
+[4.935775] (-) TimerEvent: {}
+[5.036583] (-) TimerEvent: {}
+[5.137409] (-) TimerEvent: {}
+[5.238231] (-) TimerEvent: {}
+[5.339003] (-) TimerEvent: {}
+[5.439802] (-) TimerEvent: {}
+[5.540615] (-) TimerEvent: {}
+[5.641474] (-) TimerEvent: {}
+[5.742281] (-) TimerEvent: {}
+[5.843070] (-) TimerEvent: {}
+[5.943934] (-) TimerEvent: {}
+[6.044727] (-) TimerEvent: {}
+[6.145526] (-) TimerEvent: {}
+[6.246352] (-) TimerEvent: {}
+[6.347154] (-) TimerEvent: {}
+[6.447965] (-) TimerEvent: {}
+[6.548784] (-) TimerEvent: {}
+[6.649616] (-) TimerEvent: {}
+[6.750448] (-) TimerEvent: {}
+[6.851264] (-) TimerEvent: {}
+[6.952036] (-) TimerEvent: {}
+[7.052897] (-) TimerEvent: {}
+[7.153806] (-) TimerEvent: {}
+[7.254736] (-) TimerEvent: {}
+[7.355537] (-) TimerEvent: {}
+[7.456347] (-) TimerEvent: {}
+[7.557134] (-) TimerEvent: {}
+[7.657930] (-) TimerEvent: {}
+[7.758739] (-) TimerEvent: {}
+[7.859571] (-) TimerEvent: {}
+[7.960385] (-) TimerEvent: {}
+[8.061178] (-) TimerEvent: {}
+[8.161978] (-) TimerEvent: {}
+[8.262796] (-) TimerEvent: {}
+[8.363556] (-) TimerEvent: {}
+[8.464335] (-) TimerEvent: {}
+[8.565115] (-) TimerEvent: {}
+[8.665946] (-) TimerEvent: {}
+[8.766727] (-) TimerEvent: {}
+[8.867597] (-) TimerEvent: {}
+[8.968454] (-) TimerEvent: {}
+[9.069282] (-) TimerEvent: {}
+[9.170248] (-) TimerEvent: {}
+[9.271079] (-) TimerEvent: {}
+[9.371894] (-) TimerEvent: {}
+[9.472743] (-) TimerEvent: {}
+[9.573562] (-) TimerEvent: {}
+[9.674408] (-) TimerEvent: {}
+[9.775215] (-) TimerEvent: {}
+[9.876063] (-) TimerEvent: {}
+[9.976884] (-) TimerEvent: {}
+[10.077713] (-) TimerEvent: {}
+[10.178569] (-) TimerEvent: {}
+[10.279448] (-) TimerEvent: {}
+[10.380289] (-) TimerEvent: {}
+[10.481070] (-) TimerEvent: {}
+[10.581945] (-) TimerEvent: {}
+[10.682717] (-) TimerEvent: {}
+[10.783472] (-) TimerEvent: {}
+[10.884289] (-) TimerEvent: {}
+[10.985092] (-) TimerEvent: {}
+[11.085901] (-) TimerEvent: {}
+[11.186695] (-) TimerEvent: {}
+[11.287479] (-) TimerEvent: {}
+[11.388289] (-) TimerEvent: {}
+[11.489107] (-) TimerEvent: {}
+[11.589953] (-) TimerEvent: {}
+[11.690748] (-) TimerEvent: {}
+[11.791557] (-) TimerEvent: {}
+[11.892360] (-) TimerEvent: {}
+[11.993210] (-) TimerEvent: {}
+[12.094065] (-) TimerEvent: {}
+[12.194864] (-) TimerEvent: {}
+[12.295687] (-) TimerEvent: {}
+[12.396530] (-) TimerEvent: {}
+[12.497351] (-) TimerEvent: {}
+[12.598214] (-) TimerEvent: {}
+[12.699009] (-) TimerEvent: {}
+[12.799778] (-) TimerEvent: {}
+[12.900547] (-) TimerEvent: {}
+[13.001333] (-) TimerEvent: {}
+[13.102136] (-) TimerEvent: {}
+[13.202924] (-) TimerEvent: {}
+[13.303708] (-) TimerEvent: {}
+[13.404530] (-) TimerEvent: {}
+[13.505312] (-) TimerEvent: {}
+[13.606148] (-) TimerEvent: {}
+[13.706930] (-) TimerEvent: {}
+[13.807740] (-) TimerEvent: {}
+[13.908643] (-) TimerEvent: {}
+[14.009581] (-) TimerEvent: {}
+[14.110483] (-) TimerEvent: {}
+[14.211298] (-) TimerEvent: {}
+[14.312153] (-) TimerEvent: {}
+[14.413040] (-) TimerEvent: {}
+[14.513921] (-) TimerEvent: {}
+[14.614711] (-) TimerEvent: {}
+[14.715521] (-) TimerEvent: {}
+[14.816324] (-) TimerEvent: {}
+[14.917127] (-) TimerEvent: {}
+[15.017960] (-) TimerEvent: {}
+[15.118800] (-) TimerEvent: {}
+[15.219686] (-) TimerEvent: {}
+[15.320478] (-) TimerEvent: {}
+[15.421273] (-) TimerEvent: {}
+[15.522082] (-) TimerEvent: {}
+[15.622890] (-) TimerEvent: {}
+[15.723675] (-) TimerEvent: {}
+[15.824483] (-) TimerEvent: {}
+[15.925306] (-) TimerEvent: {}
+[16.026129] (-) TimerEvent: {}
+[16.126934] (-) TimerEvent: {}
+[16.227739] (-) TimerEvent: {}
+[16.328582] (-) TimerEvent: {}
+[16.429428] (-) TimerEvent: {}
+[16.530254] (-) TimerEvent: {}
+[16.631084] (-) TimerEvent: {}
+[16.731899] (-) TimerEvent: {}
+[16.832736] (-) TimerEvent: {}
+[16.933533] (-) TimerEvent: {}
+[17.034386] (-) TimerEvent: {}
+[17.135213] (-) TimerEvent: {}
+[17.236104] (-) TimerEvent: {}
+[17.336999] (-) TimerEvent: {}
+[17.437923] (-) TimerEvent: {}
+[17.538761] (-) TimerEvent: {}
+[17.639574] (-) TimerEvent: {}
+[17.740370] (-) TimerEvent: {}
+[17.841157] (-) TimerEvent: {}
+[17.941938] (-) TimerEvent: {}
+[18.042795] (-) TimerEvent: {}
+[18.143582] (-) TimerEvent: {}
+[18.244392] (-) TimerEvent: {}
+[18.345207] (-) TimerEvent: {}
+[18.446068] (-) TimerEvent: {}
+[18.546870] (-) TimerEvent: {}
+[18.647678] (-) TimerEvent: {}
+[18.748528] (-) TimerEvent: {}
+[18.849353] (-) TimerEvent: {}
+[18.950170] (-) TimerEvent: {}
+[19.050974] (-) TimerEvent: {}
+[19.151871] (-) TimerEvent: {}
+[19.252739] (-) TimerEvent: {}
+[19.353595] (-) TimerEvent: {}
+[19.454795] (-) TimerEvent: {}
+[19.555558] (-) TimerEvent: {}
+[19.656321] (-) TimerEvent: {}
+[19.757063] (-) TimerEvent: {}
+[19.857856] (-) TimerEvent: {}
+[19.958647] (-) TimerEvent: {}
+[20.059460] (-) TimerEvent: {}
+[20.160275] (-) TimerEvent: {}
+[20.261077] (-) TimerEvent: {}
+[20.361891] (-) TimerEvent: {}
+[20.462681] (-) TimerEvent: {}
+[20.563450] (-) TimerEvent: {}
+[20.664313] (-) TimerEvent: {}
+[20.765585] (-) TimerEvent: {}
+[20.866894] (-) TimerEvent: {}
+[20.967707] (-) TimerEvent: {}
+[21.068580] (-) TimerEvent: {}
+[21.169430] (-) TimerEvent: {}
+[21.270324] (-) TimerEvent: {}
+[21.371147] (-) TimerEvent: {}
+[21.472145] (-) TimerEvent: {}
+[21.573637] (-) TimerEvent: {}
+[21.674840] (-) TimerEvent: {}
+[21.776282] (-) TimerEvent: {}
+[21.877138] (-) TimerEvent: {}
+[21.977957] (-) TimerEvent: {}
+[22.078695] (-) TimerEvent: {}
+[22.179458] (-) TimerEvent: {}
+[22.280259] (-) TimerEvent: {}
+[22.381042] (-) TimerEvent: {}
+[22.481827] (-) TimerEvent: {}
+[22.582610] (-) TimerEvent: {}
+[22.683395] (-) TimerEvent: {}
+[22.784243] (-) TimerEvent: {}
+[22.885053] (-) TimerEvent: {}
+[22.985909] (-) TimerEvent: {}
+[23.086698] (-) TimerEvent: {}
+[23.187507] (-) TimerEvent: {}
+[23.288315] (-) TimerEvent: {}
+[23.389177] (-) TimerEvent: {}
+[23.490017] (-) TimerEvent: {}
+[23.590846] (-) TimerEvent: {}
+[23.691784] (-) TimerEvent: {}
+[23.792648] (-) TimerEvent: {}
+[23.893471] (-) TimerEvent: {}
+[23.994335] (-) TimerEvent: {}
+[24.095163] (-) TimerEvent: {}
+[24.195975] (-) TimerEvent: {}
+[24.296790] (-) TimerEvent: {}
+[24.397630] (-) TimerEvent: {}
+[24.498475] (-) TimerEvent: {}
+[24.599310] (-) TimerEvent: {}
+[24.700126] (-) TimerEvent: {}
+[24.800906] (-) TimerEvent: {}
+[24.901682] (-) TimerEvent: {}
+[25.002494] (-) TimerEvent: {}
+[25.103279] (-) TimerEvent: {}
+[25.204073] (-) TimerEvent: {}
+[25.304890] (-) TimerEvent: {}
+[25.405688] (-) TimerEvent: {}
+[25.506509] (-) TimerEvent: {}
+[25.607316] (-) TimerEvent: {}
+[25.708104] (-) TimerEvent: {}
+[25.808937] (-) TimerEvent: {}
+[25.909795] (-) TimerEvent: {}
+[26.010622] (-) TimerEvent: {}
+[26.111392] (-) TimerEvent: {}
+[26.212164] (-) TimerEvent: {}
+[26.312967] (-) TimerEvent: {}
+[26.413940] (-) TimerEvent: {}
+[26.514739] (-) TimerEvent: {}
+[26.615525] (-) TimerEvent: {}
+[26.716300] (-) TimerEvent: {}
+[26.817109] (-) TimerEvent: {}
+[26.917931] (-) TimerEvent: {}
+[27.018727] (-) TimerEvent: {}
+[27.119493] (-) TimerEvent: {}
+[27.220280] (-) TimerEvent: {}
+[27.321056] (-) TimerEvent: {}
+[27.421863] (-) TimerEvent: {}
+[27.522697] (-) TimerEvent: {}
+[27.623486] (-) TimerEvent: {}
+[27.724310] (-) TimerEvent: {}
+[27.825168] (-) TimerEvent: {}
+[27.926026] (-) TimerEvent: {}
+[28.026846] (-) TimerEvent: {}
+[28.127677] (-) TimerEvent: {}
+[28.228556] (-) TimerEvent: {}
+[28.329401] (-) TimerEvent: {}
+[28.430228] (-) TimerEvent: {}
+[28.531069] (-) TimerEvent: {}
+[28.631872] (-) TimerEvent: {}
+[28.732696] (-) TimerEvent: {}
+[28.833459] (-) TimerEvent: {}
+[28.934299] (-) TimerEvent: {}
+[29.035104] (-) TimerEvent: {}
+[29.135926] (-) TimerEvent: {}
+[29.236716] (-) TimerEvent: {}
+[29.337515] (-) TimerEvent: {}
+[29.438356] (-) TimerEvent: {}
+[29.539149] (-) TimerEvent: {}
+[29.640007] (-) TimerEvent: {}
+[29.740764] (-) TimerEvent: {}
+[29.841578] (-) TimerEvent: {}
+[29.942398] (-) TimerEvent: {}
+[30.043186] (-) TimerEvent: {}
+[30.143939] (-) TimerEvent: {}
+[30.244759] (-) TimerEvent: {}
+[30.345572] (-) TimerEvent: {}
+[30.446393] (-) TimerEvent: {}
+[30.547216] (-) TimerEvent: {}
+[30.648020] (-) TimerEvent: {}
+[30.748816] (-) TimerEvent: {}
+[30.849565] (-) TimerEvent: {}
+[30.950430] (-) TimerEvent: {}
+[31.051251] (-) TimerEvent: {}
+[31.151985] (-) TimerEvent: {}
+[31.252790] (-) TimerEvent: {}
+[31.353547] (-) TimerEvent: {}
+[31.454389] (-) TimerEvent: {}
+[31.555188] (-) TimerEvent: {}
+[31.656011] (-) TimerEvent: {}
+[31.756808] (-) TimerEvent: {}
+[31.857656] (-) TimerEvent: {}
+[31.958486] (-) TimerEvent: {}
+[32.059281] (-) TimerEvent: {}
+[32.160110] (-) TimerEvent: {}
+[32.260886] (-) TimerEvent: {}
+[32.361631] (-) TimerEvent: {}
+[32.462438] (-) TimerEvent: {}
+[32.563167] (-) TimerEvent: {}
+[32.663943] (-) TimerEvent: {}
+[32.764742] (-) TimerEvent: {}
+[32.865522] (-) TimerEvent: {}
+[32.966333] (-) TimerEvent: {}
+[33.067110] (-) TimerEvent: {}
+[33.167885] (-) TimerEvent: {}
+[33.268728] (-) TimerEvent: {}
+[33.369546] (-) TimerEvent: {}
+[33.470379] (-) TimerEvent: {}
+[33.571129] (-) TimerEvent: {}
+[33.672015] (-) TimerEvent: {}
+[33.773184] (-) TimerEvent: {}
+[33.874200] (-) TimerEvent: {}
+[33.975176] (-) TimerEvent: {}
+[34.076100] (-) TimerEvent: {}
+[34.176856] (-) TimerEvent: {}
+[34.277799] (-) TimerEvent: {}
+[34.378584] (-) TimerEvent: {}
+[34.479371] (-) TimerEvent: {}
+[34.580146] (-) TimerEvent: {}
+[34.680917] (-) TimerEvent: {}
+[34.781679] (-) TimerEvent: {}
+[34.882469] (-) TimerEvent: {}
+[34.983186] (-) TimerEvent: {}
+[35.083944] (-) TimerEvent: {}
+[35.184668] (-) TimerEvent: {}
+[35.285427] (-) TimerEvent: {}
+[35.386207] (-) TimerEvent: {}
+[35.486969] (-) TimerEvent: {}
+[35.587740] (-) TimerEvent: {}
+[35.688513] (-) TimerEvent: {}
+[35.789302] (-) TimerEvent: {}
+[35.890120] (-) TimerEvent: {}
+[35.990915] (-) TimerEvent: {}
+[36.091675] (-) TimerEvent: {}
+[36.192644] (-) TimerEvent: {}
+[36.294090] (-) TimerEvent: {}
+[36.395102] (-) TimerEvent: {}
+[36.495885] (-) TimerEvent: {}
+[36.596707] (-) TimerEvent: {}
+[36.697601] (-) TimerEvent: {}
+[36.798500] (-) TimerEvent: {}
+[36.899436] (-) TimerEvent: {}
+[37.000376] (-) TimerEvent: {}
+[37.030629] (moving_box_hardware) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmoving_box_hardware.so\x1b[0m\n'}
+[37.100496] (-) TimerEvent: {}
+[37.201274] (-) TimerEvent: {}
+[37.302148] (-) TimerEvent: {}
+[37.403102] (-) TimerEvent: {}
+[37.504130] (-) TimerEvent: {}
+[37.605379] (-) TimerEvent: {}
+[37.706643] (-) TimerEvent: {}
+[37.807852] (-) TimerEvent: {}
+[37.909100] (-) TimerEvent: {}
+[38.010196] (-) TimerEvent: {}
+[38.111245] (-) TimerEvent: {}
+[38.212454] (-) TimerEvent: {}
+[38.313479] (-) TimerEvent: {}
+[38.414462] (-) TimerEvent: {}
+[38.515431] (-) TimerEvent: {}
+[38.616618] (-) TimerEvent: {}
+[38.717810] (-) TimerEvent: {}
+[38.818862] (-) TimerEvent: {}
+[38.920044] (-) TimerEvent: {}
+[39.021014] (-) TimerEvent: {}
+[39.122157] (-) TimerEvent: {}
+[39.222959] (-) TimerEvent: {}
+[39.323739] (-) TimerEvent: {}
+[39.424433] (-) TimerEvent: {}
+[39.525136] (-) TimerEvent: {}
+[39.625848] (-) TimerEvent: {}
+[39.726594] (-) TimerEvent: {}
+[39.827592] (-) TimerEvent: {}
+[39.929316] (-) TimerEvent: {}
+[40.030069] (-) TimerEvent: {}
+[40.130900] (-) TimerEvent: {}
+[40.173631] (moving_box_hardware) StdoutLine: {'line': b'[100%] Built target moving_box_hardware\n'}
+[40.214680] (moving_box_hardware) CommandEnded: {'returncode': 0}
+[40.231097] (-) TimerEvent: {}
+[40.332066] (-) TimerEvent: {}
+[40.410803] (moving_box_hardware) JobProgress: {'identifier': 'moving_box_hardware', 'progress': 'install'}
+[40.432350] (-) TimerEvent: {}
+[40.451714] (moving_box_hardware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware'], 'cwd': '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mbros'), ('USER', 'mbros'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib:/home/mbros/microros_ws/install/micro_ros_agent/lib:/home/mbros/microros_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mbros'), ('OLDPWD', '/home/mbros'), ('HUSHLOGIN', 'FALSE'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '775'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/mbros/moving_box/moving_box_hardware/install:/home/mbros/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mbros'), ('JOURNAL_STREAM', '8:19173'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'linux'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('INVOCATION_ID', 'f2c085c8dc724708a3505408168a0869'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware:/home/mbros/microros_ws/install/micro_ros_setup:/home/mbros/microros_ws/install/micro_ros_agent:/home/mbros/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_VTNR', '1'), ('PWD', '/home/mbros/moving_box/moving_box_hardware/build/moving_box_hardware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbros/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware:/home/mbros/microros_ws/install/micro_ros_setup:/home/mbros/microros_ws/install/micro_ros_agent:/home/mbros/microros_ws/install/micro_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[40.482997] (moving_box_hardware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.483659] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/moving_box_hardware.xml\n'}
+[40.484706] (moving_box_hardware) StdoutLine: {'line': b'-- Installing: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/libmoving_box_hardware.so\n'}
+[40.532529] (-) TimerEvent: {}
+[40.534523] (moving_box_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/lib/libmoving_box_hardware.so" to ""\n'}
+[40.535077] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include\n'}
+[40.535531] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware\n'}
+[40.535900] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware/visibility_control.h\n'}
+[40.536226] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/include/moving_box_hardware/moving_box_hardware_interface.hpp\n'}
+[40.536668] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/ros2_control\n'}
+[40.536964] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/ros2_control/moving_box.ros2_control.xacro\n'}
+[40.537338] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf\n'}
+[40.537806] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf/moving_box.urdf.xacro\n'}
+[40.538251] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/urdf/moving_box_description.urdf\n'}
+[40.538614] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/launch\n'}
+[40.539042] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/launch/moving_box.launch.py\n'}
+[40.539359] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/config\n'}
+[40.539729] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/config/moving_box_controllers.yaml\n'}
+[40.540104] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/library_path.sh\n'}
+[40.540459] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/library_path.dsv\n'}
+[40.541024] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/package_run_dependencies/moving_box_hardware\n'}
+[40.541485] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/parent_prefix_path/moving_box_hardware\n'}
+[40.541957] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/ament_prefix_path.sh\n'}
+[40.542575] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/ament_prefix_path.dsv\n'}
+[40.543078] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/path.sh\n'}
+[40.543526] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/environment/path.dsv\n'}
+[40.543928] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.bash\n'}
+[40.544243] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.sh\n'}
+[40.544665] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.zsh\n'}
+[40.544968] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/local_setup.dsv\n'}
+[40.545307] (moving_box_hardware) StdoutLine: {'line': b'-- Installing: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.dsv\n'}
+[40.545782] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/packages/moving_box_hardware\n'}
+[40.546197] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/moving_box_hardware\n'}
+[40.546663] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[40.547096] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[40.547528] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[40.547953] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/moving_box_hardwareConfig.cmake\n'}
+[40.548348] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/cmake/moving_box_hardwareConfig-version.cmake\n'}
+[40.548724] (moving_box_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/mbros/moving_box/moving_box_hardware/install/moving_box_hardware/share/moving_box_hardware/package.xml\n'}
+[40.554613] (moving_box_hardware) CommandEnded: {'returncode': 0}
+[40.632791] (-) TimerEvent: {}
+[40.733490] (-) TimerEvent: {}
+[40.834785] (-) TimerEvent: {}
+[40.935505] (-) TimerEvent: {}
+[41.036347] (-) TimerEvent: {}
+[41.137357] (-) TimerEvent: {}
+[41.238041] (-) TimerEvent: {}
+[41.329913] (moving_box_hardware) JobEnded: {'identifier': 'moving_box_hardware', 'rc': 0}
+[41.333510] (-) EventReactorShutdown: {}
