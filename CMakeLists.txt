@@ -49,6 +49,11 @@ install(
 )
 
 install(
+  PROGRAMS scripts/gps_sender.py
+  DESTINATION lib/moving_box_hardware
+)
+
+install(
   DIRECTORY description/ros2_control description/urdf
 #  DIRECTORY description/launch description/ros2_control description/urdf
   DESTINATION share/moving_box_hardware
