@@ -26,8 +26,8 @@ class GPS_Sender(Node):
         logger = self.get_logger()
 
         msg = NavSatFix()
-        lat = self.data_stream.TPV['lat']
-        lon = self.data_stream.TPV['lon']
+        lat = getattr(self.data_stream, 'lat', 'n/a')
+        lon = getattr(self.data_stream, 'lon', 'n/a')
         if lat == "n/a" or lon == "n/a":
             self.has_data = False
             return logger.warn("No GPS data.")
