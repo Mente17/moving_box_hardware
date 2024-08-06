@@ -49,7 +49,7 @@ install(
 )
 
 install(
-  PROGRAMS scripts/gps_sender.py
+  PROGRAMS moving_box_hardware/gps_sender.py
   DESTINATION lib/moving_box_hardware
 )
 
