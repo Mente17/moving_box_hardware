@@ -16,7 +16,7 @@ class GPS_Sender(Node):
         self.gps_socket.watch()
 
         self.create_timer(1, self.timer_callback)
-        self.publisher = self.create_publisher(NavSatFix, "/gps_data", 10)
+        self.publisher = self.create_publisher(NavSatFix, "/gps/fix", 10)
                 
     def timer_callback(self):
         new_data = self.gps_socket.next()
