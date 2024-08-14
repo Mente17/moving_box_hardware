@@ -26,6 +26,8 @@ class GPS_Sender(Node):
         logger = self.get_logger()
 
         msg = NavSatFix()
+        msg.header.frame_id = "gps_frame"
+
         lat = getattr(self.data_stream, 'lat', 'n/a')
         lon = getattr(self.data_stream, 'lon', 'n/a')
         if lat == "n/a" or lon == "n/a":
