@@ -265,10 +265,10 @@
         <material>Gazebo/Grey</material>
     </gazebo>
 
-    <joint name="gps_joint" type="fixed">
+    <!-- <joint name="gps_joint" type="fixed">
         <parent link="base_link"/>
         <child link="gps_link"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
+    </joint> -->
 
 </robot>

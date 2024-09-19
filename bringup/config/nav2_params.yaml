@@ -53,7 +53,7 @@ bt_navigator:
     global_frame: map
     robot_base_frame: base_link
     odom_topic: /odom
-    bt_loop_duration: 10
+    bt_loop_duration: 80
     default_server_timeout: 20
     # wait_for_service_timeout: 10000
     # action_server_result_timeout: 900.0
@@ -168,7 +168,7 @@ controller_server:
       debug_trajectory_details: True
       min_vel_x: 0.0
       min_vel_y: 0.0
-      max_vel_x: 1.5 #max vel forward
+      max_vel_x: 2.0 #max vel forward
       max_vel_y: 0.0
       max_vel_theta: 0.50 #max angular vel
       min_speed_xy: 0.0
@@ -380,7 +380,7 @@ velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
-    max_velocity: [0.26, 0.0, 1.0]
+    max_velocity: [2.0, 0.0, 1.0]
     min_velocity: [-0.26, 0.0, -1.0]
     max_accel: [2.5, 0.0, 3.2]
     max_decel: [-2.5, 0.0, -3.2]

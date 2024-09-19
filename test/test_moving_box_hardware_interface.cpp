@@ -17,8 +17,8 @@
 #include <string>
 
 #include "hardware_interface/resource_manager.hpp"
-#include "/opt/ros/iron/include/ros2_control_test_assets/ros2_control_test_assets/components_urdfs.hpp"
-#include "/opt/ros/iron/include/ros2_control_test_assets/ros2_control_test_assets/descriptions.hpp"
+#include "/opt/ros/jazzy/include/ros2_control_test_assets/ros2_control_test_assets/components_urdfs.hpp"
+#include "/opt/ros/jazzy/include/ros2_control_test_assets/ros2_control_test_assets/descriptions.hpp"
 
 class TestMovingBoxHardware : public ::testing::Test
 {
@@ -53,5 +53,11 @@ TEST_F(TestMovingBoxHardware, load_moving_box_hardware_interface_2dof)
 {
   auto urdf = ros2_control_test_assets::urdf_head + moving_box_hardware_interface_2dof_ +
               ros2_control_test_assets::urdf_tail;
-  ASSERT_NO_THROW(hardware_interface::ResourceManager rm(urdf));
+
+  // Создаем необходимые интерфейсы для времени и логирования
+  rclcpp::node_interfaces::NodeClockInterface::SharedPtr clock_interface = nullptr;
+  rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr logging_interface = nullptr;
+
+  // Вызов конструктора с нужными аргументами
+  ASSERT_NO_THROW(hardware_interface::ResourceManager rm(urdf, clock_interface, logging_interface, false, 0));
 }
