@@ -52,10 +52,12 @@ def generate_launch_description():
         executable="robot_state_publisher",
         output="both",
         parameters=[robot_description],
-        remappings=[
-            ("/moving_box_controller/cmd_vel_unstamped", "/cmd_vel"),
-        ],
+        # remappings=[
+        #     #("/moving_box_controller/cmd_vel_unstamped", "/cmd_vel"),
+        #     #("/moving_box_controller/cmd_vel", "/cmd_vel"),
+        # ],
     )
+    
 #    rviz_node = Node(
 #        package="rviz2",
 #        executable="rviz2",
