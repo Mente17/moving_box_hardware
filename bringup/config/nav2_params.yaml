@@ -1,3 +1,4 @@
+#define: &sim_time true
 amcl:
   ros__parameters:
     use_sim_time: False

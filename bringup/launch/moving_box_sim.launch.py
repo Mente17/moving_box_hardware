@@ -21,6 +21,8 @@ def generate_launch_description():
 
     package_name='moving_box_hardware' #<--- CHANGE ME
 
+    
+
     # robot_description_content = Command(
     #     [
     #         PathJoinSubstitution([FindExecutable(name="xacro")]),
@@ -39,6 +41,20 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
     )
 
+    slam_toolbox = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name), 'launch', 'online_async_launch.py')]
+        ),
+        launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    navigation = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name), 'launch', 'navigation_launch.py')]
+        ),
+        launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
 
     gazebo_params_file = os.path.join(get_package_share_directory(package_name),'config','gazebo_params.yaml')
 
@@ -54,6 +70,19 @@ def generate_launch_description():
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'my_bot'],
                         output='screen')
+
+
+    twist_stamper_node = Node(
+        package='twist_stamper',
+        executable='twist_stamper',
+        name='twist_stamper',
+        output='screen',
+        parameters=[{'frame_id': 'base_link'}],  
+        remappings=[
+            ('cmd_vel_in', 'cmd_vel'), 
+            ('cmd_vel_out', 'moving_box_controller/cmd_vel')  
+        ]
+    )
 
 
     diff_drive_spawner = Node(
@@ -93,7 +122,10 @@ def generate_launch_description():
     return LaunchDescription([
         rsp,
         gazebo,
+        # navigation,
+        slam_toolbox,
         spawn_entity,
         diff_drive_spawner,
-        joint_broad_spawner
+        joint_broad_spawner,
+        twist_stamper_node
     ])

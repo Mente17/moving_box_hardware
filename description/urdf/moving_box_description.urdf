@@ -26,7 +26,12 @@
     <xacro:property name="weight_length" value="0.1"/>
     <xacro:property name="weight_width" value="0.4"/>
     <xacro:property name="weight_height" value="0.05"/>
-    <xacro:property name="weight_mass" value="11.0"/>
+    <xacro:property name="weight_mass" value="10.0"/>
+
+    <xacro:property name="lidar_stick_length" value="0.04"/>
+    <xacro:property name="lidar_stick_width" value="0.06"/>
+    <xacro:property name="lidar_stick_height" value="0.25"/>
+    <xacro:property name="lidar_stick_mass" value="1.0"/>
 
     <material name="white">
         <color rgba="1 1 1 1" />
@@ -265,10 +270,35 @@
         <material>Gazebo/Grey</material>
     </gazebo>
 
-    <!-- <joint name="gps_joint" type="fixed">
+    <!-- LIDAR STICK --> 
+
+    <joint name="lidar_stick_joint" type="fixed">
         <parent link="base_link"/>
-        <child link="gps_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint> -->
+        <child link="lidar_stick"/>
+        <origin xyz="0 0 0.125"/> 
+    </joint>
+ 
+    <link name="lidar_stick">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${lidar_stick_length} ${lidar_stick_width} ${lidar_stick_height}" />
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${lidar_stick_length} ${lidar_stick_width} ${lidar_stick_height}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="${lidar_stick_mass}" x="${lidar_stick_length}" y="${lidar_stick_width}" z="${lidar_stick_height}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <gazebo reference="lidar_stick">
+        <material>Gazebo/Grey</material>
+    </gazebo>
 
 </robot>

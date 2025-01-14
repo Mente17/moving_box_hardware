@@ -59,6 +59,16 @@ install(
 )
 
 install(
+  PROGRAMS moving_box_hardware/cmd_vel_listener.py
+  DESTINATION lib/moving_box_hardware
+)
+
+install(
+  PROGRAMS moving_box_hardware/latency.py
+  DESTINATION lib/moving_box_hardware
+)
+
+install(
   DIRECTORY description/ros2_control description/urdf
 #  DIRECTORY description/launch description/ros2_control description/urdf
   DESTINATION share/moving_box_hardware
