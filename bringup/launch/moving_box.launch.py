@@ -1,3 +1,7 @@
+import os
+
+from ament_index_python.packages import get_package_share_directory
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, RegisterEventHandler
 from launch.conditions import IfCondition
@@ -9,6 +13,9 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
+
+    package_name='moving_box_hardware'
+
     # Declare arguments
     declared_arguments = []
 
@@ -47,15 +54,25 @@ def generate_launch_description():
             ("~/robot_description", "/robot_description"),
         ],
     )
+
+    twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+    twist_mux = Node(
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params],
+            remappings=[('/cmd_vel_out','/moving_box_controller/cmd_vel_unstamped')]
+        )
+
+
     robot_state_pub_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         output="both",
         parameters=[robot_description],
-        # remappings=[
-        #     #("/moving_box_controller/cmd_vel_unstamped", "/cmd_vel"),
-        #     #("/moving_box_controller/cmd_vel", "/cmd_vel"),
-        # ],
+        remappings=[
+            #  ("/moving_box_controller/cmd_vel_unstamped", "/cmd_vel"),
+            ("/moving_box_controller/cmd_vel", "/cmd_vel"),
+        ],
     )
     
 #    rviz_node = Node(
@@ -97,6 +114,7 @@ def generate_launch_description():
     )
 
     nodes = [
+        twist_mux,
         control_node,
         robot_state_pub_node,
         joint_state_broadcaster_spawner,
